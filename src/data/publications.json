@@ -1,0 +1,255 @@
+[
+  {
+    "id": "angular-tail",
+    "title": "Angular momentum tail contributions to compact binary dynamics",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Alan Müller",
+      "Stefano Foffa",
+      "Riccardo Sturani"
+    ],
+    "year": 2026,
+    "journal": "Physical Review D 114, 064057",
+    "arxiv": "2603.20096",
+    "doi": "10.1103/bkxs-xs4j",
+    "status": "published",
+    "selected": false,
+    "topics": [
+      "PN",
+      "EFT",
+      "Radiation"
+    ]
+  },
+  {
+    "id": "3pm",
+    "title": "Conservative binary dynamics to third post-Minkowskian order beyond General Relativity",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Yuchen Du",
+      "Zhengwen Liu",
+      "Hongbin Wang"
+    ],
+    "year": 2026,
+    "arxiv": "2602.08876",
+    "status": "preprint",
+    "selected": true,
+    "topics": [
+      "PM",
+      "EFT",
+      "Modified gravity"
+    ]
+  },
+  {
+    "id": "memory",
+    "title": "Gravitational memory contributions to waveform and effective action",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Alan Müller",
+      "Stefano Foffa",
+      "Riccardo Sturani"
+    ],
+    "year": 2025,
+    "journal": "Physical Review D 112, 084077",
+    "arxiv": "2410.10565",
+    "doi": "10.1103/1ncd-r238",
+    "status": "published",
+    "selected": true,
+    "topics": [
+      "PN",
+      "EFT",
+      "Radiation"
+    ]
+  },
+  {
+    "id": "spin-esgb",
+    "title": "Post-Newtonian dynamics of spinning black hole binaries in Einstein-scalar-Gauss-Bonnet gravity",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Shuang-Yong Zhou"
+    ],
+    "year": 2024,
+    "journal": "Physical Review D 110, 124016",
+    "arxiv": "2408.14196",
+    "doi": "10.1103/PhysRevD.110.124016",
+    "status": "published",
+    "selected": false,
+    "topics": [
+      "PN",
+      "EFT",
+      "Modified gravity"
+    ]
+  },
+  {
+    "id": "2pn-st",
+    "title": "Binary dynamics to second post-Newtonian order in scalar-tensor and Einstein-scalar-Gauss-Bonnet gravity from effective field theory",
+    "authors": [
+      "Gabriel Luz Almeida"
+    ],
+    "year": 2024,
+    "journal": "Physical Review D 109, 084060",
+    "arxiv": "2402.13996",
+    "doi": "10.1103/PhysRevD.109.084060",
+    "status": "published",
+    "selected": true,
+    "topics": [
+      "PN",
+      "EFT",
+      "Modified gravity"
+    ]
+  },
+  {
+    "id": "tail-emission",
+    "title": "Conservative binary dynamics from gravitational tail emission processes",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Alan Müller",
+      "Stefano Foffa",
+      "Riccardo Sturani"
+    ],
+    "year": 2023,
+    "journal": "Physical Review D 108, 124010",
+    "arxiv": "2307.05327",
+    "doi": "10.1103/PhysRevD.108.124010",
+    "status": "published",
+    "selected": false,
+    "topics": [
+      "PN",
+      "EFT",
+      "Radiation"
+    ],
+    "erratum": "Physical Review D 113, 089903 (2026)",
+    "erratumDoi": "10.1103/83v4-mwtf"
+  },
+  {
+    "id": "scattering-radiation",
+    "title": "Gravitational radiation contributions to the two-body scattering angle",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Stefano Foffa",
+      "Riccardo Sturani"
+    ],
+    "year": 2023,
+    "journal": "Physical Review D 107, 024020",
+    "arxiv": "2209.11594",
+    "doi": "10.1103/PhysRevD.107.024020",
+    "status": "published",
+    "selected": false,
+    "topics": [
+      "PN",
+      "PM",
+      "EFT",
+      "Radiation"
+    ]
+  },
+  {
+    "id": "tails",
+    "title": "Tail contributions to gravitational conservative dynamics",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Stefano Foffa",
+      "Riccardo Sturani"
+    ],
+    "year": 2021,
+    "journal": "Physical Review D 104, 124075",
+    "arxiv": "2110.14146",
+    "doi": "10.1103/PhysRevD.104.124075",
+    "status": "published",
+    "selected": false,
+    "topics": [
+      "PN",
+      "EFT",
+      "Radiation"
+    ]
+  },
+  {
+    "id": "multipoles",
+    "title": "Gravitational multipole renormalization",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Stefano Foffa",
+      "Riccardo Sturani"
+    ],
+    "year": 2021,
+    "journal": "Physical Review D 104, 084095",
+    "arxiv": "2107.02634",
+    "doi": "10.1103/PhysRevD.104.084095",
+    "erratum": "Physical Review D 111, 129901 (2025)",
+    "status": "published",
+    "selected": true,
+    "topics": [
+      "PN",
+      "EFT",
+      "Radiation"
+    ]
+  },
+  {
+    "id": "double-copy",
+    "title": "Classical gravitational self-energy from double copy",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Stefano Foffa",
+      "Riccardo Sturani"
+    ],
+    "year": 2020,
+    "journal": "JHEP 11 (2020), 165",
+    "arxiv": "2008.06195",
+    "doi": "10.1007/JHEP11(2020)165",
+    "status": "published",
+    "selected": false,
+    "topics": [
+      "EFT",
+      "Radiation"
+    ]
+  },
+  {
+    "id": "higher-d",
+    "title": "A class of higher-dimensional solutions of Einstein’s vacuum equation",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Carlos Batista"
+    ],
+    "year": 2019,
+    "journal": "European Physical Journal C 79, 11",
+    "arxiv": "1808.09998",
+    "doi": "10.1140/epjc/s10052-018-6516-3",
+    "status": "published",
+    "selected": false,
+    "topics": [
+      "Exact solutions"
+    ]
+  },
+  {
+    "id": "metrics-ii",
+    "title": "A class of integrable metrics II",
+    "authors": [
+      "Carlos Batista",
+      "Gabriel Luz Almeida"
+    ],
+    "year": 2018,
+    "journal": "Physical Review D 98, 044030",
+    "arxiv": "1805.09206",
+    "doi": "10.1103/PhysRevD.98.044030",
+    "status": "published",
+    "selected": false,
+    "topics": [
+      "Exact solutions"
+    ]
+  },
+  {
+    "id": "gauge-fields",
+    "title": "Class of integrable metrics and gauge fields",
+    "authors": [
+      "Gabriel Luz Almeida",
+      "Carlos Batista"
+    ],
+    "year": 2017,
+    "journal": "Physical Review D 96, 084003",
+    "arxiv": "1707.04630",
+    "doi": "10.1103/PhysRevD.96.084003",
+    "status": "published",
+    "selected": true,
+    "topics": [
+      "Exact solutions"
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+---
+import { site } from '../data/site';
+---
+<div class="profiles">{site.profiles.map(p=><a href={p.url} aria-label={p.name}><span aria-hidden="true" class="profile-mark">{p.mark}</span>{p.name}</a>)}</div>

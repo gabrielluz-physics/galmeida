@@ -1,0 +1,11 @@
+---
+const {lang='en'}=Astro.props;
+---
+<figure class="science-figure">
+<svg viewBox="0 0 620 215" role="img" aria-label={lang==='pt'?'Esquema de um encontro gravitacional hiperbólico, com parâmetro de impacto b e ângulo de deflexão χ.':'Schematic hyperbolic gravitational encounter, with impact parameter b and deflection angle χ.'}>
+ <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"/></marker></defs>
+ <g fill="none" stroke="currentColor"><path d="M35 42 H590 M35 173 H590" opacity=".25" stroke-dasharray="5 7"/><path d="M35 43 C225 43 280 54 339 82 S485 145 584 182" stroke-width="2.3" marker-end="url(#arrow)"/><path d="M35 172 C225 172 280 161 339 133 S485 70 584 32" stroke-width="2.3" opacity=".65" marker-end="url(#arrow)"/><path d="M130 48 V167 M123 48 H137 M123 167 H137" opacity=".65"/><path d="M340 83 H491 M427 83 A88 88 0 0 1 421 118" opacity=".5"/></g>
+ <g fill="currentColor"><circle cx="305" cy="68" r="5"/><circle cx="305" cy="147" r="5"/><text x="107" y="113" font-size="20" font-family="Georgia,serif" font-style="italic">b</text><text x="437" y="108" font-size="20" font-family="Georgia,serif">χ</text></g>
+</svg>
+<figcaption>{lang==='pt'?'Espalhamento gravitacional · esquema ilustrativo':'Gravitational scattering · schematic illustration'}</figcaption>
+</figure>

@@ -1,0 +1,13 @@
+---
+const {p,lang='en',anchor=true,compact=false,heading='h3'}=Astro.props;
+const Heading=heading;
+---
+<article class:list={['publication',{compact}]} id={anchor ? p.id : undefined} data-topics={p.topics.join('|')}>
+ <div class="pub-year">{p.year}</div>
+ <div class="pub-main">
+  <Heading class="pub-title" lang="en"><a href={`https://arxiv.org/abs/${p.arxiv}`}>{p.title}</a></Heading>
+  <p class="authors">{p.authors.join(', ')}</p>
+  <p class="pub-meta">{p.journal || (lang==='pt'?'Pré-publicação':'Preprint')}{p.erratum && <><br/><span>{lang==='pt'?'Errata':'Erratum'}: {p.erratumDoi?<a href={`https://doi.org/${p.erratumDoi}`}>{p.erratum}</a>:p.erratum}</span></>}</p>
+  <div class="pub-links"><a href={`https://arxiv.org/abs/${p.arxiv}`}>arXiv:{p.arxiv}</a>{p.doi&&<a href={`https://doi.org/${p.doi}`}>DOI</a>}<a href={`https://inspirehep.net/literature?q=${encodeURIComponent('arxiv:'+p.arxiv)}`}>INSPIRE</a></div>
+ </div>
+</article>

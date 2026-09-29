@@ -1,0 +1,4 @@
+---
+import {photos} from '../../data/photos';import {asset,type Lang} from '../../data/site';const {lang}=Astro.props;const l=lang as Lang;const pt=l==='pt';
+---
+<header class="page-intro"><div class="eyebrow">{pt?'Registros acadêmicos':'Academic moments'}</div><h1>{pt?'Fotos':'Photos'}</h1><p class="lead">{pt?'Encontros, visitas e momentos da minha trajetória na física.':'Meetings, visits and moments along my path in physics.'}</p></header><div class="gallery">{photos.map(p=><figure><a href={asset(`images/${p.src}`)} aria-label={(pt?'Abrir foto: ':'Open photograph: ')+p[l]}><img src={asset(`images/${p.src}`)} width={p.width} height={p.height} alt={pt?p.altPt:p.altEn} loading="lazy" decoding="async"/></a><figcaption>{p[l]}</figcaption></figure>)}</div>

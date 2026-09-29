@@ -1,0 +1,32 @@
+---
+import {getCollection,render} from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import {path,type Lang} from '../../../data/site';
+import 'katex/dist/katex.min.css';
+export async function getStaticPaths(){
+ const entries=await getCollection('digests');
+ const issues=new Set(entries.map(e=>e.data.issue));
+ for(const issue of issues){
+  const pair=entries.filter(e=>e.data.issue===issue);
+  if(pair.length!==2||new Set(pair.map(e=>e.data.lang)).size!==2)throw new Error(`Digest ${issue}: provide exactly one EN and one PT file.`);
+  if((['start','end','highlights'] as const).some(key=>pair[0].data[key]!==pair[1].data[key]))throw new Error(`Digest ${issue}: dates and highlight counts must match across languages.`);
+ }
+ return entries.map(entry=>({params:{lang:entry.data.lang,issue:entry.data.issue},props:{entry}}));
+}
+const {entry}=Astro.props;
+const {Content}=await render(entry);
+const lang=entry.data.lang as Lang;const pt=lang==='pt';
+const issues=(await getCollection('digests',({data})=>data.lang===lang)).sort((a,b)=>b.data.end.localeCompare(a.data.end));
+const index=issues.findIndex(e=>e.id===entry.id);
+const newer=issues[index-1];const older=issues[index+1];
+---
+<Base lang={lang} page="digest" alternatePage={`digest/${entry.data.issue}`} title={entry.data.title} description={entry.data.description}>
+ <header class="page-intro"><div class="eyebrow"><a href={path(lang,'digest')}>{pt?'Boletim semanal de física teórica':'Weekly Theoretical Physics Digest'}</a></div><h1>{entry.data.title}</h1><p class="lead">{entry.data.description}</p><p class="muted">{pt?`Preparado com auxílio de IA · ${entry.data.highlights} ${entry.data.highlights===1?'destaque':'destaques'} · fontes vinculadas em cada item`:`Prepared with AI assistance · ${entry.data.highlights} ${entry.data.highlights===1?'highlight':'highlights'} · source links in each item`}</p></header>
+ <article class="digest-content"><Content/>
+  <nav class="digest-navigation" aria-label={pt?'Navegação entre boletins':'Digest navigation'}>
+   {newer&&<a href={path(lang,`digest/${newer.data.issue}`)}>{pt?'Mais recente':'Newer'}: {newer.data.title}</a>}
+   <a href={path(lang,'digest')}>{pt?'Todas as edições':'All issues'}</a>
+   {older&&<a href={path(lang,`digest/${older.data.issue}`)}>{pt?'Anterior':'Older'}: {older.data.title}</a>}
+  </nav>
+ </article>
+</Base>

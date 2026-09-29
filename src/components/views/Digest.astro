@@ -1,0 +1,10 @@
+---
+import {getCollection} from 'astro:content';
+import {path,type Lang} from '../../data/site';
+const {lang}=Astro.props;
+const l=lang as Lang;const pt=l==='pt';
+const entries=(await getCollection('digests',({data})=>data.lang===l)).sort((a,b)=>b.data.end.localeCompare(a.data.end));
+const years=[...new Set(entries.map(e=>e.data.end.slice(0,4)))];
+---
+<header class="page-intro"><div class="eyebrow">{pt?'Notas de leitura':'Research reading'}</div><h1>{pt?'Boletim semanal de física teórica':'Weekly Theoretical Physics Digest'}</h1><p class="lead">{pt?'Uma seleção de pesquisas sobre gravitação, ondas gravitacionais, métodos PN/PM, amplitudes e integrais de Feynman.':'A selection of research on gravitation, gravitational waves, PN/PM methods, amplitudes and Feynman integrals.'}</p><p class="muted">{pt?'Boletins preparados com auxílio de IA, com links para as fontes originais.':'Digests prepared with AI assistance, with links to the original sources.'}</p></header>
+{years.map(year=><section class="digest-year" aria-labelledby={`year-${year}`}><h2 id={`year-${year}`}>{year}</h2>{entries.filter(e=>e.data.end.startsWith(year)).map(e=><article class="digest-entry"><div><h3><a href={path(l,`digest/${e.data.issue}`)}>{e.data.title}</a></h3><p>{e.data.description}</p><p class="meta">{e.data.highlights} {pt?(e.data.highlights===1?'destaque':'destaques'):(e.data.highlights===1?'highlight':'highlights')} · {e.data.categories.join(' / ')}</p><p><a href={path(l,`digest/${e.data.issue}`)}>{pt?'Ler boletim completo':'Read the full digest'}</a></p></div></article>)}</section>)}

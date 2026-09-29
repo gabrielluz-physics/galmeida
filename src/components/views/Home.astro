@@ -1,0 +1,15 @@
+---
+import {site,bios,path,asset,type Lang} from '../../data/site';
+import publications from '../../data/publications';
+import Profiles from '../Profiles.astro';
+import Publication from '../Publication.astro';
+import Scattering from '../Scattering.astro';
+import {getCollection} from 'astro:content';
+const {lang='en'}=Astro.props;const l=lang as Lang;const pt=l==='pt';
+const digests=(await getCollection('digests',({data})=>data.lang===l)).sort((a,b)=>b.data.end.localeCompare(a.data.end));const latest=digests[0];
+const themes=pt?['Dinâmica de dois corpos','PN / EFT','Espalhamento PM','Radiação gravitacional','Gravidade modificada','Métodos multiloop']:['Two-body dynamics','PN / EFT','PM scattering','Gravitational radiation','Modified gravity','Multiloop methods'];
+const anchors=['two-body','pn-eft','pm-scattering','radiation','modified-gravity','pm-scattering'];
+---
+<section class="hero"><div><div class="eyebrow">{pt?'Gravitação · Ondas gravitacionais · Teoria de campos':'Gravitation · Gravitational waves · Field theory'}</div><h1>Gabriel Luz Almeida</h1><p class="role">{bios[l].role}</p><p class="affiliation">{site.center} · {site.institution}<br/>{bios[l].location}</p><p class="lead">{bios[l].short}</p><div class="actions"><a class="button primary" href={path(l,'research')}>{pt?'Pesquisa':'Research'}</a><a class="button" href={path(l,'publications')}>{pt?'Publicações':'Publications'}</a><a class="button" href={path(l,'cv')}>{pt?'Currículo':'Curriculum vitae'}</a></div><Profiles/></div><figure class="portrait"><img src={asset('images/portrait-small.webp')} width="700" height="700" alt="Gabriel Luz Almeida" fetchpriority="high"/><figcaption>Gabriel Luz Almeida</figcaption></figure></section>
+<section class="research-strip"><h2 class="section-label">{pt?'Áreas de pesquisa':'Research themes'}</h2><div class="theme-list">{themes.map((t,i)=><a href={`${path(l,'research')}#${anchors[i]}`}>{t}</a>)}</div></section>
+<div class="home-columns"><section><div class="section-heading"><h2>{pt?'Publicações selecionadas':'Selected publications'}</h2><a href={path(l,'publications')}>{pt?'Lista completa':'Full list'}</a></div>{publications.filter(p=>p.selected).slice(0,3).map(p=><Publication p={p} lang={l} compact anchor={false}/>)}</section><aside class="home-side"><section><div class="section-label">{pt?'Pesquisa atual':'Current research'}</div><h2>{pt?'Da radiação ao espalhamento':'From radiation to scattering'}</h2><p>{pt?'Investigo efeitos radiativos não lineares e a dinâmica de alta ordem em relatividade geral e em teorias escalar-tensoriais, conectando métodos PN, PM e de integração multiloop.':'I investigate nonlinear radiative effects and high-order dynamics in general relativity and scalar-tensor theories, connecting PN, PM and multiloop methods.'}</p><Scattering lang={l}/></section>{latest&&<section><div class="section-label">{pt?'Último boletim semanal':'Latest weekly digest'}</div><h2 class="digest-date">{latest.data.title}</h2><p>{latest.data.description}</p><p><a href={path(l,`digest/${latest.data.issue}`)}>{pt?'Ler o boletim':'Read the digest'}</a></p></section>}</aside></div>
