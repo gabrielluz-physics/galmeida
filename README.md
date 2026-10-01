@@ -157,6 +157,8 @@ Não foi criado um repositório nem efetuada uma publicação externa. A configu
 
 O workflow usa `actions/configure-pages` para obter `origin` e `base_path`. Assim, o site funciona tanto na raiz quanto em `/nome-do-repositorio/` sem editar links. Use Node 22 e `npm ci` para reproduzir o lockfile.
 
+Se o job `build` disser que não encontrou `package-lock.json`, verifique no GitHub se ele aparece **na raiz do repositório**, ao lado de `package.json`, e se `.github/workflows/deploy.yml` está na pasta `.github/workflows/`. Todos estão incluídos no pacote deste projeto. No GitHub Desktop, use **Repository → Show in Finder** para confirmar que está editando a pasta do repositório; depois confira o arquivo na aba **Changes**, crie um commit e clique em **Push origin**. Se o arquivo já estiver em um commit local, clique em **Push origin** mesmo sem mudanças novas. `Fetch origin` apenas consulta o servidor e não envia arquivos. A execução seguinte da aba Actions deve chegar à etapa `npm ci` antes do build; uma execução antiga não é corrigida por alterações locais.
+
 Para testar manualmente um caminho de projeto (macOS/Linux):
 
 ```bash

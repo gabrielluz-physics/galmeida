@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="pt-BR"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>20–27 de setembro de 2026 · Gabriel Luz Almeida</title><meta name="description" content="Efeitos hereditários PN, radiação PM, teoria de perturbações de buracos negros e novas ferramentas para integrais multiloop em espaço de Minkowski."><meta name="author" content="Gabriel Luz Almeida"><meta property="og:title" content="20–27 de setembro de 2026 · Gabriel Luz Almeida"><meta property="og:description" content="Efeitos hereditários PN, radiação PM, teoria de perturbações de buracos negros e novas ferramentas para integrais multiloop em espaço de Minkowski."><meta property="og:type" content="website"><meta property="og:locale" content="pt_BR"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="20–27 de setembro de 2026 · Gabriel Luz Almeida"><meta name="twitter:description" content="Efeitos hereditários PN, radiação PM, teoria de perturbações de buracos negros e novas ferramentas para integrais multiloop em espaço de Minkowski."><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="color-scheme" content="light dark"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Gabriel Luz Almeida","jobTitle":"Pesquisador de pós-doutorado em física teórica","worksFor":{"@type":"CollegeOrUniversity","name":"Southeast University"},"sameAs":["https://inspirehep.net/authors/1845938","https://orcid.org/0000-0003-0390-0605","http://lattes.cnpq.br/4974855586479672","https://yauc.seu.edu.cn/Gabriel%20Luz%20Almeida_en/list.psp","https://scholar.google.com/citations?hl=en&user=H__PE8EAAAAJ"]}</script><script>try{const t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch{}</script><link rel="stylesheet" href="/_astro/_page_.Cg210vu5.css">
+<link rel="stylesheet" href="/_astro/_issue_.DbX94k4-.css"></head> <body> <a href="#main" class="skip-link">Pular para o conteúdo</a> <header class="site-header wrap"> <div class="masthead"><a class="wordmark" href="/pt/">Gabriel Luz Almeida<span>Física teórica</span></a> <div class="utilities"><div class="languages" role="group" aria-label="Idioma"><a lang="en" href="/en/digest/2026-09-20-27/">EN</a><span aria-hidden="true">/</span><a lang="pt-BR" href="/pt/digest/2026-09-20-27/" aria-current="true">PT</a></div> <button class="theme-toggle" type="button" aria-label="Tema escuro" aria-pressed="false" title="Alternar tema"><svg width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="1.5"></circle><path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor"></path></svg></button> <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button></div> </div> <nav id="main-nav" aria-label="Navegação principal"><a href="/pt/research/">Pesquisa</a><a href="/pt/publications/">Publicações</a><a href="/pt/teaching/">Ensino</a><a href="/pt/digest/" aria-current="page">Boletim semanal</a><a href="/pt/about/">Sobre</a><a href="/pt/cv/">Currículo</a><a href="/pt/photos/">Fotos</a><a class="contact-nav" href="/pt/contact/">Contato</a></nav> </header> <main id="main" class="wrap" tabindex="-1"> <header class="page-intro"><div class="eyebrow"><a href="/pt/digest/">Boletim semanal de física teórica</a></div><h1>20–27 de setembro de 2026</h1><p class="lead">Efeitos hereditários PN, radiação PM, teoria de perturbações de buracos negros e novas ferramentas para integrais multiloop em espaço de Minkowski.</p><p class="muted">Preparado com auxílio de IA · 12 destaques · fontes vinculadas em cada item</p></header> <article class="digest-content"><section class="toc">
+<strong>Conteúdo</strong>
+<ul>
+<li><a href="#sixty">A semana em 60 segundos</a></li>
+<li><a href="#gravity">Dinâmica de dois corpos e ondas gravitacionais</a></li>
+<li><a href="#qft">EFT, amplitudes e integrais de Feynman</a></li>
+<li><a href="#other">Outros desenvolvimentos</a></li>
+<li><a href="#read-first">Prioridades de leitura</a></li>
+<li><a href="#monitor">Vale acompanhar</a></li>
+</ul>
+</section>
+<section id="sixty" class="summary">
+<h2>A semana em 60 segundos</h2>
+<ul>
+<li><strong>Forma de onda de espalhamento no domínio do tempo e no limite de razão extrema de massas:</strong> um novo cálculo alcança 5PM e 7PN. A novidade é a representação temporal e a profundidade PN; não se trata da maior ordem PM já obtida para formas de onda.</li>
+<li><strong>Teoremas soft e efeitos hereditários PN:</strong> a estrutura logarítmica soft é conectada à memória, à cauda da memória, a caudas iteradas, a logaritmos UV e à evolução pelo grupo de renormalização.</li>
+<li><strong>Automação em teoria de perturbações de buracos negros:</strong> novas ferramentas geram expansões em baixas frequências/PM e PN de dados MST, soluções de Teukolsky e fluxos.</li>
+<li><strong>Regiões escondidas em integrais de Feynman minkowskianas:</strong> um algoritmo sistemático busca regiões que a análise usual do politopo de Newton pode omitir.</li>
+<li><strong>Resposta de segunda ordem de Kerr:</strong> relatividade numérica e a equação de Teukolsky de segunda ordem revelam ressonâncias em estados de espalhamento quadráticos, acompanhadas de um teste observacional inicial com GW250114.</li>
+</ul>
+</section>
+<h2 id="gravity">1. Dinâmica relativística de dois corpos e ondas gravitacionais</h2>
+<article class="item">
+<h3>1. Forma de onda de espalhamento no domínio do tempo até 5PM e 7PN</h3>
+<div class="paper-meta"><em>Binary black hole scattering in the extreme-mass-ratio limit: time-domain waveform</em><br>Andrea Geralico · arXiv:2609.30118 · pré-publicação</div>
+<p><strong>O resultado.</strong> Geralico calcula diretamente no domínio do tempo a forma de onda gravitacional produzida pelo espalhamento de dois corpos sem spin, na primeira ordem na razão de massas, até 5PM e 7PN. O cálculo complementa os tratamentos de primeira ordem em autoforça no domínio da frequência e disponibiliza resultados simbólicos extensos.</p>
+<p>Uma ressalva importante: esta <strong>não</strong> é a forma de onda de maior ordem PM já obtida. O trabalho anterior do autor no domínio da frequência alcança 8PM. O avanço aqui é a representação no <strong>domínio do tempo</strong>, com precisão 7PN.</p>
+<p><strong>Por que importa.</strong> O resultado estabelece uma conexão independente entre expansão PM, teoria de autoforça e observáveis temporais, fornecendo dados no limite de razão extrema de massas para futuros cálculos radiativos PM com razão de massas genérica.</p>
+<p><span class="label">Relevância muito alta</span> Referência para radiação PM, reação de radiação e comparações entre espalhamento e estados ligados.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.30118">arXiv:2609.30118</a><a href="https://arxiv.org/abs/2607.26614">Trabalho anterior em 8PM</a></div>
+</article>
+<article class="item">
+<h3>2. Teoremas soft, caudas PN, memória e logaritmos de renormalização</h3>
+<div class="paper-meta"><em>Classical soft theorems meet the post-Newtonian expansion</em><br>Samim Akhtar, Riccardo Sturani · arXiv:2609.29895 · pré-publicação</div>
+<p><strong>O resultado.</strong> Os autores analisam a propagação da radiação gravitacional na curvatura estática de fundo de uma binária compacta no formalismo multipolar PN. Conectam os logaritmos infravermelhos associados à memória, à cauda da memória e a inserções sucessivas de caudas aos teoremas soft clássicos logarítmicos de Sahoo e Sen.</p>
+<p>Também discutem os logaritmos ultravioletas associados à sensibilidade da expansão multipolar a curtas distâncias e à correspondente evolução pelo grupo de renormalização.</p>
+<p><strong>Por que importa.</strong> O trabalho organiza estruturas hereditárias PN em uma linguagem que pode permitir prever termos logarítmicos a partir de informação soft e de amplitudes, sem recalcular todas as contribuições.</p>
+<p><span class="label">Relevância muito alta</span> Diretamente relacionado a caudas, radiação e renormalização em EFT.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.29895">arXiv:2609.29895</a></div>
+</article>
+<article class="item">
+<h3>3. Novas ferramentas analíticas de alta ordem PN no Black Hole Perturbation Toolkit</h3>
+<div class="paper-meta"><em>Black Hole Perturbation Toolkit: Low frequency and post-Newtonian expansions</em><br>Jakob Neef, Chris Kavanagh, Adrian Ottewill · arXiv:2609.25281 · pré-publicação</div>
+<p><strong>O resultado.</strong> As novas funcionalidades geram expansões em baixas frequências/PM dos coeficientes MST, do momento angular renormalizado, das amplitudes radiais e dos deslocamentos de fase; expansões PN das funções radiais homogêneas; e, para órbitas circulares em Kerr, amplitudes não homogêneas e fluxos no horizonte e no infinito.</p>
+<p><strong>Por que importa.</strong> Resultados PN no limite de razão extrema de massas são úteis como dados de contorno para reconstruções EOB/PM e como verificações de cálculos com razão de massas genérica. Ferramentas analíticas reproduzíveis facilitam o acesso a ordens elevadas.</p>
+<p><span class="label">Relevância alta</span> Fonte prática de dados no limite de massa de teste para potenciais derivados em PM e verificações de observáveis invariantes de calibre.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.25281">arXiv:2609.25281</a></div>
+</article>
+<article class="item">
+<h3>4. Espalhamento quadrático de ondas gravitacionais por Kerr</h3>
+<div class="paper-meta"><em>Quadratic Gravitational-Wave Scattering by Kerr Black Holes</em><br>Lennox S. Keeble, Hengrui Zhu, Lawrence E. Kidder, Harald P. Pfeiffer, Mark A. Scheel · arXiv:2609.25522 · pré-publicação</div>
+<p><strong>O resultado.</strong> Ondas gravitacionais quase monocromáticas nos modos (2,±2) são espalhadas por buracos negros de Kerr. A relatividade numérica mede a resposta quadrática de saída no modo (4,4), com o dobro da frequência original. Uma ressonância no modo gerado acompanha o modo quase normal fundamental (4,4,0); o acoplamento não linear depende do estado completo de espalhamento, e não apenas da frequência.</p>
+<p>Um cálculo semianalítico com a equação de Teukolsky de segunda ordem reproduz a resposta numérica.</p>
+<p><strong>Por que importa.</strong> O estudo amplia a teoria de perturbações de segunda ordem para além dos modos quase normais quadráticos, alcançando um problema de espalhamento contínuo mais geral.</p>
+<p><span class="label">Relevância média-alta</span> Menos direto para a dinâmica PN/PM, mas relevante para ondas gravitacionais não lineares e resposta em campo forte.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.25522">arXiv:2609.25522</a></div>
+</article>
+<article class="item">
+<h3>5. Um modelo EOB com spin e informação 5PM é estendido à radiação e à evolução</h3>
+<div class="paper-meta"><em>Evolution dynamics of spinning binaries in effective-one-body theory to fifth Post-Minkowskian order</em><br>Jiliang Jing, Sheng Long, Weike Deng, Jieci Wang · arXiv:2609.27251 · <em>Science China Physics, Mechanics &#x26; Astronomy</em> 69, 110142 (2026)</div>
+<p><strong>O resultado.</strong> Trata-se de uma extensão e aplicação, e não de uma nova derivação independente da dinâmica conservativa 5PM. Partindo de uma métrica efetiva com rotação previamente construída até 5PM, os autores derivam a Hamiltoniana e o tensor de energia-momento, formulam uma equação separável com fonte do tipo Teukolsky para ψ<sub>4</sub> e obtêm fluxos, reação de radiação e formas de onda.</p>
+<p><strong>Por que importa.</strong> O interesse metodológico está em combinar informação conservativa PM de alta ordem, perturbações de uma métrica efetiva e dinâmica dissipativa EOB em uma mesma descrição.</p>
+<p><span class="label">Relevância alta</span> Conexão entre dados de espalhamento PM e modelos EOB de formas de onda.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.27251">arXiv:2609.27251</a><a href="https://doi.org/10.1007/s11433-026-3067-7">DOI</a></div>
+</article>
+<article class="item">
+<h3>6. Dinâmica em meios externos: atrito dinâmico e campos escalares ultraleves</h3>
+<div class="paper-meta"><em>Renormalized Dynamical Friction in Black-Hole Spacetimes</em> · Jordan Wilson-Gerow · arXiv:2609.23192<br><em>Dynamical Friction in an Ultralight Scalar Medium across Coherent and Stochastic Regimes</em> · Soumodeep Mitra, Jordan Wilson-Gerow · arXiv:2609.28641</div>
+<p><strong>O resultado.</strong> O primeiro artigo formula efeitos ambientais e de autoforça por meio de uma ação efetiva EFT de Schwinger–Keldysh, obtendo uma divergência UV na contribuição da esteira produzida no meio e a correspondente renormalização e matching. O segundo estuda binárias em meios escalares ultraleves, identificando dissipação em grandes comprimentos de onda, um logaritmo de Coulomb universal e flutuações estocásticas no fluxo de energia médio sobre a órbita.</p>
+<p><strong>Por que importa.</strong> Correções ambientais passam a ser descritas como um problema controlado de EFT, com renormalização, funções de Green em espaço-tempo curvo e regularização de autoforça.</p>
+<p><span class="label">Relevância metodológica alta</span></p>
+<p class="note"><strong>Contexto anterior.</strong> O primeiro artigo de Wilson-Gerow foi submetido em 19 de setembro, antes da janela de leitura desta edição; ele aparece como contexto para o trabalho relacionado discutido aqui.</p>
+      <div class="links"><a href="https://arxiv.org/abs/2609.23192">arXiv:2609.23192</a><a href="https://arxiv.org/abs/2609.28641">arXiv:2609.28641</a></div>
+</article>
+<article class="item">
+<h3>7. Avanço do periastro por um método analítico compacto</h3>
+<div class="paper-meta"><em>Periastron advance from the perturbed Binet equation</em><br>Quentin Henry · arXiv:2609.29907 · pré-publicação</div>
+<p><strong>O resultado.</strong> A teoria de perturbações de Poincaré–Lindstedt é aplicada diretamente à equação de Binet. Os termos seculares determinam a correção à frequência radial e, portanto, o avanço do periastro. O método admite perturbações polinomiais, logarítmicas e em potências inversas, com diversos parâmetros de expansão simultâneos.</p>
+<p>O artigo reproduz resultados conhecidos e deriva termos de multipolos de maré de massa e corrente arbitrários, multipolos induzidos pelo spin, marés de quadrupolo de corrente em NNLO e correções eletromagnéticas.</p>
+<p><strong>Por que importa.</strong> Oferece um caminho compacto da dinâmica conservativa a um observável invariante de calibre.</p>
+<p><span class="label">Relevância alta</span> Verificação independente de Hamiltonianas, potenciais e resultados EOB.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.29907">arXiv:2609.29907</a></div>
+</article>
+<h2 id="qft">2. EFT, amplitudes, métodos de QFT e integrais de Feynman</h2>
+<article class="item">
+<h3>8. Hidden Region Finder: regiões omitidas em expansões assintóticas minkowskianas</h3>
+<div class="paper-meta"><em>Hidden Region Finder: asymptotic expansions of Feynman integrals in Minkowski space</em><br>Einan Gardi · arXiv:2609.29442 · pré-publicação, CERN-TH-2026-233</div>
+<p><strong>O resultado.</strong> Implementações geométricas usuais do método de regiões funcionam bem em limites euclidianos, nos quais as regiões correspondem a faces de um politopo de Newton. Limites minkowskianos podem conter regiões adicionais escondidas. Gardi as relaciona sistematicamente a singularidades de pinçamento e às condições de Landau, propondo um algoritmo para identificá-las.</p>
+<p>O estudo testa essa estrutura em integrais sem massa de quatro, cinco e seis pontos, nos limites de grande ângulo on-shell, planar, colinear, duplamente colinear e de Regge.</p>
+<p><strong>Por que importa.</strong> Omitir uma região assintótica pode comprometer o resultado inteiro. Um critério robusto para essas contribuições pode melhorar significativamente a automação de expansões multiloop.</p>
+<p><span class="label">Relevância muito alta</span> Aplicável a integrais de gravitação clássica/PM em cinemática minkowskiana e em regimes próximos de limiares ou do limite de Regge.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.29442">arXiv:2609.29442</a></div>
+</article>
+<article class="item">
+<h3>9. Consistência a seis pontos e a amplitude de Veneziano</h3>
+<div class="paper-meta"><em>Six-point consistency and uniqueness of the Veneziano amplitude</em><br>Ilmo Sung · arXiv:2609.29919 · pré-publicação</div>
+<p><strong>O resultado.</strong> Em um contexto planar específico com supersimetria máxima em quatro dimensões, consistência a seis pontos, identidades de Ward supersimétricas, meromorfia, positividade e uma relação de dispersão frontal sem subtrações restringem fortemente a amplitude de quatro pontos. Sob essas hipóteses, exigem uma torre infinita de polos igualmente espaçados em massa ao quadrado.</p>
+<p><strong>Por que importa.</strong> É um resultado de bootstrap de amplitudes em que a consistência a mais pontos reconstrói uma estrutura analítica muito restrita a menos pontos.</p>
+<p><span class="label">Relevância moderada</span> Interesse estrutural para métodos de amplitudes, embora sem aplicação direta a um cálculo de gravitação clássica.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.29919">arXiv:2609.29919</a></div>
+</article>
+<article class="item">
+<h3>10. Simetria de escada do anel de luz, modos quase normais e polos de Regge</h3>
+<div class="paper-meta"><em>Accurate Black Hole Quasinormal Modes, Regge Poles, and Greybody Factors from Light Ring Ladder Symmetry</em><br>Rajes Ghosh, David Pereñiguez, Jaime Redondo-Yuste, Emanuele Berti · arXiv:2609.25228 · pré-publicação</div>
+<p><strong>O resultado.</strong> Uma simetria de escada na expansão de altas frequências em torno do anel de luz transforma o problema de perturbações de buracos negros em um cálculo de oscilador anarmônico. Os autores obtêm modos quase normais, polos de Regge e fatores de corpo cinzento de Schwarzschild até a 18ª ordem em momento angular inverso, com ressomação.</p>
+<p><strong>Por que importa.</strong> O método reúne diferentes manifestações da resposta de buracos negros em um mesmo formalismo e pode ser generalizado para rotação e gravidade modificada.</p>
+<p><span class="label">Relevância moderada-alta</span> Especialmente interessante para espalhamento e resposta de buracos negros.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.25228">arXiv:2609.25228</a></div>
+</article>
+<h2 id="other">3. Outros desenvolvimentos em física teórica</h2>
+<p class="note">Com um critério de seleção deliberadamente alto, esta categoria reúne apenas dois estudos de gravidade quântica e modificada.</p>
+<article class="item">
+<h3>11. A segurança assintótica pode gerar um setor de Horndeski?</h3>
+<div class="paper-meta"><em>Emergence of Horndeski gravity from asymptotic safety?</em><br>Astrid Eichhorn, Pedro G. S. Fernandes, Fabian Willaschek · arXiv:2609.29369 · pré-publicação</div>
+<p><strong>O resultado.</strong> Os autores estudam duas interações não mínimas entre escalar e gravidade geradas em um cenário de segurança assintótica. A combinação de Horndeski aparece apenas para uma razão particular entre acoplamentos, que a análise pode realizar para um valor específico da constante cosmológica. Também encontram indícios de estabilidade radiativa aproximada.</p>
+<p><strong>Por que importa.</strong> O estudo procura conectar um cenário UV de gravidade quântica a uma estrutura restrita de operadores escalar-tensoriais no infravermelho.</p>
+<p><strong>Ressalva.</strong> Trata-se de um indício dentro do truncamento adotado, não de uma demonstração de que a segurança assintótica gera unicamente a teoria de Horndeski.</p>
+<p><span class="label">Relevância moderada</span> Próximo das teorias escalar-tensoriais entre os trabalhos de gravidade quântica.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.29369">arXiv:2609.29369</a></div>
+</article>
+<article class="item">
+<h3>12. Gravidade quântica e o limite exatamente extremal no colapso</h3>
+<div class="paper-meta"><em>Collapse to extremality: The third law of black hole thermodynamics in quantum gravity</em><br>Gustavo J. Turiaci, Chih-Hung Wu · arXiv:2609.26875 · pré-publicação</div>
+<p><strong>O resultado.</strong> O artigo constrói um processo clássico que aparentemente leva um buraco negro carregado quase extremal à extremalidade em tempo finito. O mesmo sistema é então analisado quanticamente usando a descrição AdS<sub>2</sub> próxima ao horizonte. O estado final exatamente extremal é substituído por uma distribuição de energia cuja probabilidade se anula na extremalidade e tem máximo em energia de excitação positiva.</p>
+<p><strong>Por que importa.</strong> É um exemplo dinâmico concreto em que as versões clássica e quântica da terceira lei apresentam comportamentos diferentes.</p>
+<p><span class="label">Relevância indireta</span> Interesse conceitual para termodinâmica de buracos negros e gravidade quântica.</p>
+<div class="links"><a href="https://arxiv.org/abs/2609.26875">arXiv:2609.26875</a></div>
+</article>
+<section id="read-first" class="read-first">
+<h2>Prioridades de leitura</h2>
+<ol>
+<li><strong>Akhtar e Sturani — <em>Classical soft theorems meet the post-Newtonian expansion</em>.</strong> A conexão conceitual mais próxima dos estudos PN/EFT de efeitos hereditários, logaritmos e renormalização. <a href="https://arxiv.org/abs/2609.29895">arXiv:2609.29895</a></li>
+<li><strong>Gardi — <em>Hidden Region Finder</em>.</strong> Possível contribuição técnica de grande utilidade para cálculos multiloop e IBP. <a href="https://arxiv.org/abs/2609.29442">arXiv:2609.29442</a></li>
+<li><strong>Geralico — forma de onda de espalhamento no domínio do tempo.</strong> Referência de alta ordem PN em primeira ordem de autoforça para radiação no espalhamento. <a href="https://arxiv.org/abs/2609.30118">arXiv:2609.30118</a></li>
+<li><strong>Neef, Kavanagh e Ottewill — expansões PN no BH Perturbation Toolkit.</strong> Ferramenta a testar como fonte de dados de alta ordem PN no limite de massa de teste. <a href="https://arxiv.org/abs/2609.25281">arXiv:2609.25281</a></li>
+<li><strong>Keeble e colaboradores — espalhamento quadrático por Kerr.</strong> Conexão entre perturbações de segunda ordem, relatividade numérica e observáveis não lineares. <a href="https://arxiv.org/abs/2609.25522">arXiv:2609.25522</a></li>
+</ol>
+</section>
+<section id="monitor" class="monitor">
+<h2>Vale acompanhar</h2>
+<ul>
+<li><strong>Acoplamento de modos quadráticos em GW250114.</strong> Yang, Shi e Hu apresentam uma primeira restrição direta ao coeficiente de acoplamento 220×220, compatível com ajustes de relatividade numérica e teoria de perturbações de segunda ordem. Os dados ainda não distinguem previsões dependentes do spin. <a href="https://arxiv.org/abs/2609.28953">arXiv:2609.28953</a></li>
+<li><strong>Redes neurais informadas pela gravitação para dinâmica PN.</strong> Barbagallo e Matulich treinam modelos com dinâmica conservativa PN e reação de radiação dominante em 2,5PN. É uma experiência computacional interessante, ainda sem substituir ferramentas analíticas e numéricas de alta ordem. <a href="https://arxiv.org/abs/2609.25222">arXiv:2609.25222</a></li>
+</ul>
+</section>
+<h2>Avaliação geral</h2>
+<p>O tema mais forte de 20–27 de setembro de 2026 não foi uma nova ordem PM conservativa para razão de massas genérica. A semana trouxe <strong>conexões e ferramentas</strong>: radiação temporal PM e autoforça, efeitos hereditários PN e teoremas soft, automação BHPT em alta ordem PN, resposta de Kerr de segunda ordem e um possível avanço no método de regiões para integrais multiloop minkowskianas.</p> <nav class="digest-navigation" aria-label="Navegação entre boletins">  <a href="/pt/digest/">Todas as edições</a>  </nav> </article> </main> <footer class="site-footer wrap"><div><a class="footer-name" href="/pt/">Gabriel Luz Almeida</a><p>Shing-Tung Yau Center<br>Southeast University · Nanquim, China</p></div><div><div class="profiles"><a href="https://inspirehep.net/authors/1845938" aria-label="INSPIRE-HEP"><span aria-hidden="true" class="profile-mark">iH</span>INSPIRE-HEP</a><a href="https://orcid.org/0000-0003-0390-0605" aria-label="ORCID"><span aria-hidden="true" class="profile-mark">iD</span>ORCID</a><a href="http://lattes.cnpq.br/4974855586479672" aria-label="Currículo Lattes"><span aria-hidden="true" class="profile-mark">CV</span>Currículo Lattes</a><a href="https://yauc.seu.edu.cn/Gabriel%20Luz%20Almeida_en/list.psp" aria-label="Perfil no Shing-Tung Yau Center"><span aria-hidden="true" class="profile-mark">YC</span>Perfil no Shing-Tung Yau Center</a><a href="https://scholar.google.com/citations?hl=en&user=H__PE8EAAAAJ" aria-label="Google Scholar"><span aria-hidden="true" class="profile-mark">GS</span>Google Scholar</a></div><a href="mailto:galmeida@seu.edu.cn">galmeida@seu.edu.cn</a><p class="copyright">© 2026 Gabriel Luz Almeida</p></div></footer> <script type="module">const s=document.querySelector(".theme-toggle"),a=document.documentElement,r=matchMedia("(prefers-color-scheme: dark)"),c=()=>a.dataset.theme?a.dataset.theme==="dark":r.matches,n=()=>s?.setAttribute("aria-pressed",String(c()));n();r.addEventListener("change",n);s?.addEventListener("click",()=>{a.dataset.theme=c()?"light":"dark",n();try{localStorage.setItem("theme",a.dataset.theme)}catch{}});const e=document.querySelector(".menu-toggle"),d=document.querySelector(".site-header");e?.addEventListener("click",()=>{const t=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",String(!t)),d?.classList.toggle("nav-open",!t)});document.addEventListener("keydown",t=>{t.key==="Escape"&&e?.getAttribute("aria-expanded")==="true"&&(e.setAttribute("aria-expanded","false"),d?.classList.remove("nav-open"),e.focus())});document.documentElement.classList.add("js");</script> </body> </html>

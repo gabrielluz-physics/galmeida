@@ -11,8 +11,8 @@ export const site = {
  profiles: [
   {name:'INSPIRE-HEP',url:'https://inspirehep.net/authors/1845938',mark:'iH'},
   {name:'ORCID',url:'https://orcid.org/0000-0003-0390-0605',mark:'iD'},
-  {name:'Lattes CV',namePt:'Currículo Lattes',url:'http://lattes.cnpq.br/4974855586479672'},
-  {name:'Shing-Tung Yau Center Profile',namePt:'Perfil no Shing-Tung Yau Center',url:'https://yauc.seu.edu.cn/Gabriel%20Luz%20Almeida_en/list.psp'},
+  {name:'Lattes CV',namePt:'Currículo Lattes',url:'http://lattes.cnpq.br/4974855586479672',mark:'CV'},
+  {name:'Shing-Tung Yau Center Profile',namePt:'Perfil no Shing-Tung Yau Center',url:'https://yauc.seu.edu.cn/Gabriel%20Luz%20Almeida_en/list.psp',mark:'YC'},
   {name:'Google Scholar',url:'https://scholar.google.com/citations?hl=en&user=H__PE8EAAAAJ',mark:'GS'},
  ],
 };
