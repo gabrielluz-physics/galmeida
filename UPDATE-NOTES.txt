@@ -1,0 +1,29 @@
+ATUALIZAÇÃO DO SITE — 1º DE OUTUBRO DE 2026
+
+Arquivos alterados:
+- src/components/views/Home.astro: introdução científica, contêiner do retrato e notícias.
+- src/components/views/About.astro: narrativa em quatro parágrafos e bolsa nas distinções.
+- src/components/views/CV.astro: financiamentos e bolsas, sem repetição da bolsa em prêmios.
+- src/data/site.ts: textos EN/PT e data editorial.
+- src/data/academic.ts: registros compartilhados da bolsa e do financiamento.
+- src/data/news.ts (novo): seleção cronológica das notícias em destaque.
+- src/styles/global.css: geometria do retrato e notícias discretas e responsivas.
+- scripts/export-cv-data.mjs e scripts/generate-cv.py: pipeline atualizado e suporte ao nome chinês.
+- public/documents/Gabriel-Luz-Almeida-CV-en.pdf e -pt.pdf: regenerados, quatro páginas cada.
+- README.md, SOURCES.md e AUDIT.md: manutenção, proveniência e verificações atualizadas.
+- FINAL-WORDING.txt (novo): textos finais completos em inglês e português.
+- dist/: versão compilada atualizada.
+
+Retrato: a antiga moldura usava a caixa completa da figura, que incluía a legenda.
+O novo contêiner envolve somente a foto e reserva 20 px à esquerda e abaixo.
+Foto e moldura têm dimensões iguais, com deslocamento de 20 px; a legenda fica fora.
+No celular, a moldura continua oculta e a foto mantém 145 × 145 px.
+
+Verificações: build e auditoria na raiz (22 páginas, 437 referências locais) e em
+/galmeida (22 páginas, 436 referências locais), sem erros. PDFs renderizados e
+revisados. Conteúdo EN/PT, duplicações e privacidade conferidos.
+A prévia de navegador foi bloqueada pela política do ambiente; a revisão visual
+responsiva e dos temas desta atualização ficou pendente. A geometria foi conferida
+no CSS nas larguras solicitadas. O relatório registra essa limitação.
+
+Nenhuma publicação externa foi executada. O workflow do GitHub Pages foi preservado.

@@ -1,4 +1,4 @@
 ---
 import {site,bios,type Lang} from '../../data/site';import Profiles from '../Profiles.astro';const {lang}=Astro.props;const l=lang as Lang;const pt=l==='pt';
 ---
-<header class="page-intro"><div class="eyebrow">{pt?'Contato acadêmico':'Academic contact'}</div><h1>{pt?'Contato':'Contact'}</h1></header><section class="contact-block"><h2>Gabriel Luz Almeida</h2><p>{bios[l].role}<br/>{site.center}<br/>{site.institution}<br/>{bios[l].location}</p><p class="contact-email"><a href={`mailto:${site.email}`}>{site.email}</a></p><Profiles/></section>
+<header class="page-intro"><div class="eyebrow">{pt?'Contato acadêmico':'Academic contact'}</div><h1>{pt?'Contato':'Contact'}</h1></header><section class="contact-block"><h2>Gabriel Luz Almeida</h2><p>{bios[l].role}<br/>{site.center}<br/>{site.institution}<br/>{bios[l].location}</p><p class="contact-email"><a href={`mailto:${site.email}`}>{site.email}</a></p><Profiles lang={l}/></section>

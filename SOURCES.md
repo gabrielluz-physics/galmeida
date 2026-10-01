@@ -61,3 +61,16 @@ A versão efetivamente instalada está fixada em `package-lock.json`. O projeto 
 - Todas as 13 páginas arXiv dos artigos foram consultadas nesta revisão; metadados recentes de 2602.08876, 2603.20096, 2408.14196 e 2402.13996 foram comparados à base. Não se promoveu o preprint 3PM a artigo aceito.
 - **Nova correção bibliográfica:** o artigo *Conservative binary dynamics from gravitational tail emission processes* tem errata **Physical Review D 113, 089903 (2026)**. A página oficial do artigo original confirma a referência e fornece o DOI da errata **10.1103/83v4-mwtf**. A referência e o link foram acrescentados à base e aos CVs. Fontes: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.124010 ; https://arxiv.org/abs/2307.05327 . A página individual da errata retornou 403; sua existência e seu DOI são sustentados pelo link na página original.
 - As alterações são editoriais, bibliográficas e de interface. Não equivalem à reprodução independente dos cálculos científicos do autor ou dos artigos resumidos no boletim.
+
+
+## Atualização — 2026-10-01: notícias e CV
+
+- Fonte primária NSFC: https://yauc.seu.edu.cn/2026/0827/c27551a580594/page.htm, publicada em 27/08/2026 e consultada em 01/10/2026. A tabela identifica Gabriel Luz Almeida, a categoria 外国青年学者研究基金项目 e o título “Automated High-Precision Modeling for Next-Generation Gravitational-Wave Observations” / “面向下一代引力波观测的自动化高精度建模”. A notícia relata resultados anunciados em 26/08/2026.
+- O período 2027–2028 foi informado diretamente pelo titular; não consta do texto da notícia consultada. Nenhum valor financeiro foi acrescentado.
+- A concessão da bolsa Zhishan, o ano letivo com início em setembro de 2026 e sua descrição são informações fornecidas pelo titular. Não foi inventado link para um anúncio público individual.
+- A narrativa ampliada preserva a trajetória previamente documentada e expressa as motivações científicas solicitadas pelo titular. Não acrescenta posições, prêmios ou resultados científicos inéditos.
+
+
+## Minor maintenance — academic profiles
+
+The owner supplied the Yau Center profile (`https://yauc.seu.edu.cn/Gabriel%20Luz%20Almeida_en/list.psp`) and Lattes CV (`http://lattes.cnpq.br/4974855586479672`). They are now stored in `site.profiles`. Both exact URLs and localized labels were verified in generated HTML and PDF links. The web lookup tool could not retrieve either destination during this pass, so no claim of independently verified live availability is made. Earlier notes about these URLs not being supplied are historical.

@@ -1,4 +1,9 @@
 ---
-import { site } from '../data/site';
+import { site, type Lang } from '../data/site';
+const {lang='en'}=Astro.props;
+const l=lang as Lang;
 ---
-<div class="profiles">{site.profiles.map(p=><a href={p.url} aria-label={p.name}><span aria-hidden="true" class="profile-mark">{p.mark}</span>{p.name}</a>)}</div>
+<div class="profiles">{site.profiles.map(p=>{
+ const label=l==='pt'&&'namePt' in p?p.namePt:p.name;
+ return <a href={p.url} aria-label={label}>{'mark' in p&&p.mark&&<span aria-hidden="true" class="profile-mark">{p.mark}</span>}{label}</a>;
+})}</div>

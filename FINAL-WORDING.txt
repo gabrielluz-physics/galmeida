@@ -1,0 +1,60 @@
+FINAL WEBSITE WORDING / TEXTOS FINAIS DO SITE
+Updated / Atualizado: 2026-10-01
+
+ENGLISH
+============================================================
+
+HOMEPAGE INTRODUCTION
+
+How can we describe the relativistic motion of compact objects precisely enough to interpret the gravitational waves they emit? I approach this question by connecting classical gravity with quantum-field-theory ideas, using effective field theory, post-Newtonian and post-Minkowskian expansions, scattering amplitudes and multiloop methods. My aim is to understand binary dynamics and gravitational radiation while developing precise predictions for current and future observations.
+
+ABOUT ME
+
+I am a Brazilian theoretical physicist and a postdoctoral researcher at the Shing-Tung Yau Center, Southeast University, in Nanjing, China. My interest in physics began with observing the night sky in Arcoverde, in the interior of Pernambuco. Astronomy gave me an initial set of questions about how physical systems behave, and studying physics at the Universidade Federal de Pernambuco (UFPE) gave me a mathematical language for approaching them. There, my work focused on the geometric foundations of general relativity, exact solutions of Einstein’s equations and hidden symmetries. This training continues to shape how I think about gravity: understanding its structure is closely connected to finding useful ways of calculating physical quantities.
+
+During my doctorate at UFRN and the International Institute of Physics, my attention turned to gravitational-wave theory and the relativistic two-body problem. What draws me to this problem is the meeting of several areas of theoretical physics in a concrete setting: two compact objects interacting through gravity and emitting radiation. General relativity and classical field theory provide the physical description, while effective field theory, scattering amplitudes and multiloop Feynman integrals offer complementary ways to organize and perform the calculations. Methods developed for quantum field theory can reveal structures in a classical problem, and the two-body problem provides a setting in which to explore those connections in detail.
+
+Gravitational waves also give this formal work an observational purpose. The motion of compact binaries and the radiation they produce carry information about strongly gravitating systems, including black holes. Extracting that information requires precise theoretical predictions and an understanding of the approximations behind them. I am interested in how post-Newtonian and post-Minkowskian descriptions complement one another, how nonlinear radiation affects binary dynamics, and how these calculations change when gravity includes additional fields. For me, the appeal lies in connecting the structure of the theory to quantities that can ultimately be tested against gravitational-wave signals.
+
+Research visits in Europe and Brazil, followed by postdoctoral work at USTC and Southeast University, broadened my research to modified gravity and post-Minkowskian scattering. My current work brings these interests together through field-theory methods for compact-binary dynamics and gravitational radiation. Alongside research, I serve as a referee for Physical Review D and Physical Review Letters. My teaching experience includes undergraduate physics in Brazil and courses on gravitational waves and effective field theory in China; explaining how the physical questions guide the calculations is an important part of that work.
+
+ANNOUNCEMENTS
+
+2026 — Zhishan Postdoctoral Fellowship (至善博士后)
+Southeast University, China
+Competitive university-level fellowship recognizing outstanding postdoctoral researchers for academic achievement, research capability, and future potential. 2026 academic year, beginning in September 2026.
+
+2026 — NSFC Research Fund for International Young Scientists
+National Natural Science Foundation of China (NSFC)
+Project: Automated High-Precision Modeling for Next-Generation Gravitational-Wave Observations
+Research grant approved in 2026. Funding period: 2027–2028.
+Official announcement: https://yauc.seu.edu.cn/2026/0827/c27551a580594/page.htm
+
+PORTUGUÊS
+============================================================
+
+INTRODUÇÃO DA PÁGINA INICIAL
+
+Como descrever o movimento relativístico de objetos compactos com a precisão necessária para interpretar as ondas gravitacionais que eles emitem? Investigo essa questão conectando a gravitação clássica a ideias da teoria quântica de campos, com o uso de teorias de campos efetivas, expansões pós-newtonianas e pós-minkowskianas, amplitudes de espalhamento e métodos multiloop. Busco compreender a dinâmica de sistemas binários e a radiação gravitacional, desenvolvendo previsões precisas para observações atuais e futuras.
+
+SOBRE MIM
+
+Sou físico teórico brasileiro e pesquisador de pós-doutorado no Shing-Tung Yau Center da Southeast University, em Nanquim, China. Meu interesse pela física começou com a observação do céu noturno de Arcoverde, no interior de Pernambuco. A astronomia trouxe as primeiras perguntas sobre o comportamento dos sistemas físicos, e a formação na Universidade Federal de Pernambuco (UFPE) me deu uma linguagem matemática para investigá-las. Ali, estudei os fundamentos geométricos da relatividade geral, soluções exatas das equações de Einstein e simetrias escondidas. Essa formação continua presente na maneira como penso a gravitação: compreender a estrutura da teoria está intimamente ligado a encontrar formas úteis de calcular grandezas físicas.
+
+Durante o doutorado na UFRN e no Instituto Internacional de Física, passei a me dedicar à teoria de ondas gravitacionais e ao problema relativístico de dois corpos. Um dos aspectos que mais me interessam nesse problema é o encontro de diferentes áreas da física teórica em uma situação concreta: dois objetos compactos que interagem gravitacionalmente e emitem radiação. A relatividade geral e a teoria clássica de campos fornecem a descrição física, enquanto as teorias de campos efetivas, as amplitudes de espalhamento e as integrais de Feynman multiloop oferecem maneiras complementares de organizar e realizar os cálculos. Métodos desenvolvidos na teoria quântica de campos podem revelar estruturas de um problema clássico, tornando possível explorar essas conexões em detalhe.
+
+As ondas gravitacionais também dão a esse trabalho formal uma finalidade observacional. O movimento de sistemas binários compactos e a radiação que eles produzem carregam informações sobre sistemas de gravitação intensa, incluindo buracos negros. Extrair essas informações exige previsões teóricas precisas e uma compreensão das aproximações utilizadas. Interessa-me entender como as descrições pós-newtoniana e pós-minkowskiana se complementam, como a radiação não linear afeta a dinâmica orbital e como esses cálculos se modificam quando a gravitação inclui campos adicionais. Para mim, parte do interesse está justamente em conectar a estrutura da teoria a grandezas que possam ser confrontadas com sinais de ondas gravitacionais.
+
+Visitas de pesquisa na Europa e no Brasil, seguidas pelos pós-doutorados na USTC e na Southeast University, ampliaram esse programa para a gravidade modificada e o espalhamento pós-minkowskiano. Hoje, reúno essas linhas de investigação por meio de métodos de teoria de campos aplicados à dinâmica de binárias compactas e à radiação gravitacional. Também atuo como parecerista de Physical Review D e Physical Review Letters. Minha experiência de ensino inclui atividades em disciplinas de graduação no Brasil e cursos de ondas gravitacionais e teoria de campos efetiva na China. Nesse trabalho, procuro explicitar como as perguntas físicas orientam os cálculos.
+
+NOTÍCIAS
+
+2026 — Bolsa de Pós-Doutorado Zhishan (至善博士后)
+Southeast University, China
+Bolsa competitiva da universidade que reconhece pesquisadores de pós-doutorado de destaque por suas realizações acadêmicas, capacidade de pesquisa e potencial futuro. Ano letivo de 2026, com início em setembro de 2026.
+
+2026 — NSFC — Fundo de Pesquisa para Jovens Pesquisadores Internacionais
+Fundação Nacional de Ciências Naturais da China (NSFC)
+Projeto: Automated High-Precision Modeling for Next-Generation Gravitational-Wave Observations
+Financiamento de pesquisa aprovado em 2026. Período de financiamento: 2027–2028.
+Comunicado oficial: https://yauc.seu.edu.cn/2026/0827/c27551a580594/page.htm

@@ -1,4 +1,29 @@
-# Auditoria da entrega
+# Minor maintenance: PDF title and profile links
+
+Both CVs regenerated and visually reviewed; no empty parentheses anywhere. CJK omitted from PDF titles for embedded-font compatibility, retained on the website. Both requested profiles added with localized labels in the shared collection. Root and `/galmeida` builds and audits pass (22 pages; 437/436 local references; zero errors). External profile pages could not be retrieved; exact supplied hrefs verified in compiled HTML and PDFs. See `MAINTENANCE-2026-10-01.md` for cause, scope and checks. The reports below describe earlier passes.
+
+---
+
+# Atualização de 1º de outubro de 2026
+
+Esta seção registra os testes da atualização atual; o relatório anterior foi preservado abaixo como histórico.
+
+- Arquitetura Astro, dependências, fotografias, publicações, boletins, ensino, navegação, temas e workflow do GitHub Pages preservados.
+- Build na raiz: 22 páginas; auditoria existente: 437 referências locais, zero erros.
+- Build de produção com `SITE_URL=https://gabrielluz-physics.github.io` e `BASE_PATH=/galmeida`: 22 páginas e 436 referências locais, zero erros; canônicos e hreflang verificados pela auditoria.
+- Textos EN/PT de Início, Sobre e CV inspecionados no HTML compilado. Sobre contém 401 palavras em inglês e 424 em português, em quatro parágrafos.
+- Notícias orientadas por dados, com duas entradas; bolsa compartilhada entre Sobre, CVs e notícias. Nos CVs, aparece uma única vez. Financiamento separado dos prêmios.
+- PDFs EN/PT regenerados a partir dos dados; quatro páginas cada. Todas as páginas foram renderizadas e revistas visualmente, sem cortes, sobreposição ou páginas extras. Nome chinês verificado na extração e na renderização; comunicado oficial é um link de rótulo curto.
+- Fonte oficial NSFC consultada; aprovação, categoria e título confirmados. Período 2027–2028 e bolsa Zhishan provêm do titular.
+- Geometria do retrato examinada no CSS a 1920, 1440, 1280, 1024, 768, 390 e 360 px. A imagem e a moldura têm dimensões iguais e deslocamento reservado de 20 px, independente da legenda. Em <=600 px, foto de 145 × 145 px e moldura oculta.
+- Limitação atual: a prévia no navegador disponível foi bloqueada pela política de acesso do ambiente. Portanto, as larguras indicadas acima são uma verificação geométrica do CSS, não medições de navegador. A revisão visual responsiva e dos temas desta atualização não pôde ser concluída; os testes de navegador descritos no relatório histórico não devem ser atribuídos a esta versão.
+- Cores das novas regras usam as variáveis existentes dos temas claro e escuro; nenhum JavaScript de navegação, tema ou filtros foi alterado.
+- Aviso não bloqueante do ambiente: npm informa uma configuração `http-proxy` desconhecida; build e auditoria concluem normalmente.
+- Nenhuma publicação externa ou envio ao GitHub foi executado nesta atualização.
+
+---
+
+# Auditoria histórica da entrega
 
 Versão: 29 de setembro de 2026 — segunda revisão implementada.
 

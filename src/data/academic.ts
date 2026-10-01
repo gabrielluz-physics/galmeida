@@ -7,7 +7,33 @@ export const timeline = [
  {date:'2012–2017',place:'Universidade Federal de Pernambuco',en:'BSc in Physics · Recife, Brazil',pt:'Bacharelado em Física · Recife, Brasil',detail:''},
  {date:'2015–2016',place:'Montana State University',en:'Undergraduate exchange · Bozeman, USA',pt:'Intercâmbio de graduação · Bozeman, EUA',detail:''}
 ];
+export const zhishanFellowship = {
+ id:'zhishan-2026', category:'fellowship', year:2026, date:'2026-09',
+ en:'Zhishan Postdoctoral Fellowship (至善博士后)',
+ pt:'Bolsa de Pós-Doutorado Zhishan (至善博士后)',
+ // PDF titles use only characters supported by the embedded DejaVu fonts.
+ pdfTitle:{en:'Zhishan Postdoctoral Fellowship',pt:'Bolsa de Pós-Doutorado Zhishan'},
+ institution:{en:'Southeast University, China',pt:'Southeast University, China'},
+ description:{
+  en:'Competitive university-level fellowship recognizing outstanding postdoctoral researchers for academic achievement, research capability, and future potential.',
+  pt:'Bolsa competitiva da universidade que reconhece pesquisadores de pós-doutorado de destaque por suas realizações acadêmicas, capacidade de pesquisa e potencial futuro.'
+ },
+ period:{en:'2026 academic year, beginning in September 2026',pt:'Ano letivo de 2026, com início em setembro de 2026'}
+};
+export const nsfcGrant = {
+ id:'nsfc-2026', category:'research-grant', year:2026, date:'2026-08-27',
+ en:'NSFC Research Fund for International Young Scientists',
+ pt:'NSFC — Fundo de Pesquisa para Jovens Pesquisadores Internacionais',
+ institution:{en:'National Natural Science Foundation of China (NSFC)',pt:'Fundação Nacional de Ciências Naturais da China (NSFC)'},
+ project:'Automated High-Precision Modeling for Next-Generation Gravitational-Wave Observations',
+ projectChinese:'面向下一代引力波观测的自动化高精度建模',
+ description:{en:'Research grant approved in 2026.',pt:'Financiamento de pesquisa aprovado em 2026.'},
+ period:{en:'Funding period: 2027–2028',pt:'Período de financiamento: 2027–2028'},
+ url:'https://yauc.seu.edu.cn/2026/0827/c27551a580594/page.htm'
+};
+export const grantsAndFellowships = [zhishanFellowship, nsfcGrant];
 export const awards = [
+ zhishanFellowship,
  {year:2024,en:'ICTP-SAIFR PhD Prize in Classical Gravity and Applications',pt:'Prêmio ICTP-SAIFR de Melhor Tese em Gravitação Clássica e Aplicações',url:'https://www.ictp-saifr.org/gravityprize/'},
  {year:2017,en:'Academic Laurel · Universidade Federal de Pernambuco',pt:'Láurea Acadêmica · Universidade Federal de Pernambuco'}
 ];

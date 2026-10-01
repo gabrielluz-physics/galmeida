@@ -28,7 +28,8 @@ O build gera `dist/`, pronto para hospedagem estática. O ZIP também inclui uma
 | `src/data/site.ts` | Nome, afiliação, email, perfis, navegação, biografias EN/PT e funções de caminhos |
 | `src/data/publications.json` | Artigos, autores em ordem, arXiv, DOI, seleção e temas |
 | `src/data/research.ts` | Texto bilíngue dos seis eixos de pesquisa e artigos relacionados |
-| `src/data/academic.ts` | Formação, posições, prêmios, ensino, palestras e visitas |
+| `src/data/academic.ts` | Formação, posições, prêmios, financiamentos, bolsas, ensino, palestras e visitas |
+| `src/data/news.ts` | Seleção e ordenação de notícias da página inicial |
 | `src/data/photos.ts` | Fotos, dimensões, legendas e descrições alternativas |
 | `src/content/digests/` | Uma página Markdown por edição e idioma |
 | `src/content.config.ts` | Validação dos metadados dos boletins |
@@ -46,7 +47,7 @@ O build gera `dist/`, pronto para hospedagem estática. O ZIP também inclui uma
 
 ## Editar o conteúdo em inglês ou português
 
-Os arquivos de dados usam chaves `en` e `pt`. Edite a chave correspondente. Biografias estão em `site.ts`; pesquisa em `research.ts`; atividades acadêmicas em `academic.ts`. Títulos de artigos e nomes oficiais de cursos/instituições preservam o idioma original.
+Os arquivos de dados usam chaves `en` e `pt`. Edite a chave correspondente. Biografias estão em `site.ts` (`homeIntroduction` para a introdução da página inicial, `aboutNarrative` para os quatro parágrafos de Sobre e `bios.short` para o resumo conciso dos CVs); pesquisa em `research.ts`; atividades acadêmicas em `academic.ts`. Títulos de artigos e nomes oficiais de cursos/instituições preservam o idioma original.
 
 Textos curtos próprios das páginas estão nos componentes de `src/components/views/`, em expressões `pt ? 'Português' : 'English'`. Os títulos e as descrições SEO por página estão em `src/pages/[lang]/[...page].astro`.
 
@@ -55,6 +56,14 @@ A troca EN/PT preserva a seção e a edição do boletim. Ela não depende de tr
 ## Atualizar sua posição atual
 
 Edite `currentPosition` em `src/data/site.ts`: instituição, centro, ano inicial, supervisor, cargo e cidade EN/PT. A página inicial, Contato, rodapé, biografia curta institucional, metadados e primeira entrada da trajetória passam a usar esses dados. A narrativa histórica e os cursos anteriores continuam sendo registros históricos; revise-os quando houver mudança de posição. Regenere os PDFs pela seção abaixo.
+
+## Notícias, financiamentos e bolsas
+
+Edite os registros em `src/data/academic.ts`: `zhishanFellowship` e `nsfcGrant` são compartilhados por notícias, currículo web e PDFs. `grantsAndFellowships` reúne bolsas e financiamentos, com `category` distinguindo `fellowship` de `research-grant`. A bolsa também aparece em `awards` para a página Sobre; os CVs a exibem apenas em Financiamentos e bolsas, sem duplicá-la em Prêmios.
+
+Para acrescentar uma notícia, inclua um registro em `src/data/news.ts`, diretamente ou importado de `academic.ts`, com `date` ISO (ano-mês ou ano-mês-dia), `year`, `category`, títulos `en`/`pt`, `institution`, `description` e `period` nos dois idiomas, além de `featured: true`. `project` e `url` são opcionais. O componente acrescenta um ponto final após `period`; salve esse campo sem pontuação final. As três notícias destacadas mais recentes são exibidas automaticamente. Use `featured: false` para retirar uma notícia do destaque. Mantenha os dois idiomas e não use a data de início de um financiamento como se fosse sua data de aprovação.
+
+Depois de mudar os dados acadêmicos, regenere ambos os PDFs e atualize `site.updated`. O nome chinês da bolsa Zhishan permanece no site. Nos PDFs, `pdfTitle.en`/`pdfTitle.pt` fornecem o título sem o sufixo chinês para usar somente as fontes DejaVu incorporadas. O campo opcional `pdfAlternateTitle` só gera parênteses quando contém texto não vazio e caracteres suportados pela fonte incorporada. Nenhuma dependência npm foi acrescentada.
 
 ## Acrescentar uma publicação
 
@@ -132,7 +141,7 @@ Atualize a data editorial em `site.updated`, em `src/data/site.ts`. Os PDFs não
 
 Os rótulos estão em `nav` de `src/data/site.ts`; a ordem principal está em `mainNav` de `Base.astro`. Contato aparece no cabeçalho e o email no rodapé. Uma nova seção exige também adicionar a rota em `pages`, o componente correspondente e a descrição SEO.
 
-Os perfis públicos ficam em `site.profiles`. Foram incluídos INSPIRE-HEP, ORCID e Google Scholar fornecidos por você. GitHub, Lattes e um perfil institucional pessoal só devem ser acrescentados quando você fornecer os URLs corretos.
+Os perfis públicos ficam em `site.profiles`. Inclui INSPIRE-HEP, ORCID, Lattes, perfil no Shing-Tung Yau Center e Google Scholar. `name` contém o rótulo inglês; `namePt`, quando presente, fornece o português. Os novos perfis usam texto simples, sem logotipos. O componente `Profiles` recebe `lang` e mantém os mesmos links na página inicial, Contato e rodapé. Os PDFs reutilizam a coleção.
 
 As cores são variáveis CSS no início de `global.css`. O tema segue o sistema até o visitante escolher claro/escuro. A preferência é local ao dispositivo. Não há cookies nem rastreamento. Fontes principais: Georgia e fontes de sistema, sem chamadas externas.
 
@@ -175,3 +184,11 @@ Antes de cada publicação relevante, confira menu móvel, teclado, temas e link
 ## English quick start
 
 Run `npm ci`, then `npm run dev`. Build with `npm run build` and check local links with `npm run audit`. Content lives in the bilingual data files and Markdown digest entries listed above. Commit this folder's contents to the root of a GitHub repository, enable GitHub Actions under Settings → Pages, and push to `main`. The workflow automatically handles root sites, repository subpaths and configured custom domains. The supplied PDFs are public CVs; the original private source documents are deliberately excluded from this project.
+
+## Atualização de 1º de outubro de 2026
+
+O retrato da página inicial usa `.portrait-image` para reservar a área da foto e o deslocamento da moldura. A largura total acompanha a coluna; a imagem ocupa a largura restante após `--portrait-offset`. A moldura tem a mesma largura e altura da foto, deslocada 20 px para baixo e para a esquerda. A legenda fica fora desse contêiner. No celular, o deslocamento é zero, a moldura desaparece e a imagem mantém 145 × 145 px.
+
+A entrega inclui `FINAL-WORDING.txt` com todos os novos textos EN/PT. Consulte a atualização mais recente no início de `AUDIT.md` para distinguir verificações desta entrega de testes históricos.
+
+Para atualizar o repositório já existente no seu Mac, substitua os arquivos da pasta local pelos desta entrega, preservando a pasta `.git`. No GitHub Desktop, revise as alterações, crie um commit e use **Push origin**. O workflow existente executa o build e publica. Este pacote não inclui nem substitui o histórico Git.

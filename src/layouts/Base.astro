@@ -34,7 +34,7 @@ const schema={'@context':'https://schema.org','@type':'Person',name:site.name,jo
   <nav id="main-nav" aria-label={l==='pt'?'Navegação principal':'Main navigation'}>{mainNav.map(p=><a href={path(l,p)} aria-current={page===p?'page':undefined}>{nav[l][p]}</a>)}<a class="contact-nav" href={path(l,'contact')} aria-current={page==='contact'?'page':undefined}>{nav[l].contact}</a></nav>
  </header>
  <main id="main" class="wrap" tabindex="-1"><slot/></main>
- <footer class="site-footer wrap"><div><a class="footer-name" href={path(l)}>{site.name}</a><p>{site.center}<br/>{site.institution} · {bios[l].location}</p></div><div><Profiles/><a href={`mailto:${site.email}`}>{site.email}</a><p class="copyright">© {new Date().getFullYear()} {site.name}</p></div></footer>
+ <footer class="site-footer wrap"><div><a class="footer-name" href={path(l)}>{site.name}</a><p>{site.center}<br/>{site.institution} · {bios[l].location}</p></div><div><Profiles lang={l}/><a href={`mailto:${site.email}`}>{site.email}</a><p class="copyright">© {new Date().getFullYear()} {site.name}</p></div></footer>
  <script>
   const toggle=document.querySelector<HTMLButtonElement>('.theme-toggle');
   const root=document.documentElement;
